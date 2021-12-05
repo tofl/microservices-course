@@ -8,7 +8,7 @@ import { ExpirationCompleteListener } from './events/listeners/expiration-comple
 import { PaymentCreatedListener } from './events/listeners/payment-created-listener';
 
 const start = async () => {
-  console.log('Starting orders service...');
+  console.log('Starting orders service....');
 
   // Check that environment variables are defined
   if (!process.env.JWT_KEY) {
