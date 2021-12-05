@@ -11,7 +11,7 @@ jest.mock('../nats-wrapper');
 let mongo: any;
 
 beforeAll(async () => {
-	jest.setTimeout(10000);
+	jest.setTimeout(60000);
 
 	process.env.JWT_KEY = 'azertyuiop';
 
