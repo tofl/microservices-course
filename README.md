@@ -6,4 +6,4 @@ This project stems the _[Microservices with Node JS and React](https://www.udemy
 Ce projet issu de la formation _[Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/)_ par Stephen Grider, architecte logiciel.
 
 ## Installation
-After cloning the project, make sure to rename `common/_git` to `common/.git`.
+After cloning the project, make sure to rename `common/git` to `common/.git`.
