@@ -11,8 +11,6 @@ jest.mock('../nats-wrapper');
 let mongo: any;
 
 beforeAll(async () => {
-	jest.setTimeout(60000);
-
 	process.env.JWT_KEY = 'azertyuiop';
 
 	mongo = await MongoMemoryServer.create();
@@ -33,7 +31,7 @@ beforeEach(async () => {
 afterAll(async () => {
 	await mongo.stop();
 	await mongoose.connection.close();
-});
+}, 60000);
 
 global.signup = () => {
 	// Build a JWT payload. { id, email }

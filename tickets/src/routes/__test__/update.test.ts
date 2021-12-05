@@ -4,7 +4,7 @@ import { app } from '../../app';
 import { natsWrapper } from '../../nats-wrapper';
 import { Ticket } from '../../models/ticket';
 
-it('returns a 404 if the provided id doesn not exist', async () => {
+it('returns a 404 if the provided id does not not exist', async () => {
   const id = new mongoose.Types.ObjectId().toHexString();
 
   await request(app)
