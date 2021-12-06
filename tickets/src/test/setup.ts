@@ -31,7 +31,7 @@ beforeEach(async () => {
 afterAll(async () => {
 	await mongo.stop();
 	await mongoose.connection.close();
-});
+}, 60000);
 
 global.signup = () => {
 	// Build a JWT payload. { id, email }
