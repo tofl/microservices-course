@@ -4,8 +4,9 @@ export default ({ req }) => {
   if (typeof window === 'undefined') {
     // We are on the server!
     // Requests can be made to: 'http://ingress-nginx.ingress-nginx-controller.svc.cluster.local'
+    // on the local machine
     return axios.create({
-      baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      baseURL: 'http://ticketing.rosalie.io',
       headers: req.headers,
     });
   } else {
