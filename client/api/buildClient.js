@@ -6,7 +6,7 @@ export default ({ req }) => {
     // Requests can be made to: 'http://ingress-nginx.ingress-nginx-controller.svc.cluster.local'
     // on the local machine
     return axios.create({
-      baseURL: 'http://ticketing.rosalie.io',
+      baseURL: 'http://www.ticketing.rosalie.io',
       headers: req.headers,
     });
   } else {

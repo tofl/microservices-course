@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   rules:
-    - host: ticketing.rosalie.io
+    - host: www.ticketing.rosalie.io
       http:
         paths:
           - path: /api/users/?(.*)
@@ -51,7 +51,7 @@ kind: Service
 metadata:
   annotations:
     service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'true'
-    service.beta.kubernetes.io/do-loadbalancer-hostname: 'ticketing.rosalie.io'
+    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.ticketing.rosalie.io'
   labels:
     helm.sh/chart: ingress-nginx-2.0.3
     app.kubernetes.io/name: ingress-nginx
