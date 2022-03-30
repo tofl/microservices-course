@@ -7,3 +7,4 @@ Ce projet issu de la formation _[Microservices with Node JS and React](https://w
 
 ## Installation
 After cloning the project, make sure to rename `common/git` to `common/.git`.
+Finally, launch the project using [Skaffold](https://skaffold.dev/).
